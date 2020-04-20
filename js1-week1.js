@@ -8,12 +8,9 @@ console.log(yearBorn(30));
 
 function nameAndYear(name, age) {
   const birthYear = yearBorn(age);
-  // const name = "Sally";
-
-  //   const message =
-  return (
-    "My name is " + name + " " + "and I was born in" + " " + birthYear + "."
-  );
+  let message =
+    "My name is " + name + " " + "and I was born in" + " " + birthYear + ".";
+  return message;
 }
 console.log(nameAndYear("Sally", 15));
 
