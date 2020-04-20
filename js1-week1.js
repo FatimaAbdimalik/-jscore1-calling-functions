@@ -1,18 +1,21 @@
 // Function inside a funcion HW
 
 function yearBorn(age) {
-  return 2020 - age;
+  let currentYear = 2020;
+  return currentYear - age;
 }
 console.log(yearBorn(30));
 
 function nameAndYear(name, age) {
-  const herAge = 2020 - yearBorn(age);
+  const birthYear = yearBorn(age);
+  // const name = "Sally";
+
   //   const message =
   return (
-    "My name is " + name + " " + "and I am" + " " + herAge + " " + "years old."
+    "My name is " + name + " " + "and I was born in" + " " + birthYear + "."
   );
 }
-console.log(nameAndYear("Sara", 100));
+console.log(nameAndYear("Sally", 15));
 
 //exercise 2
 
